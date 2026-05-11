@@ -65,4 +65,17 @@ def create_task(task: Task) -> dict:
     conn.close()
 
     return {"id": task_id, "title": task.title}
+
+@app.delete("/tasks/{task_id}")
+def remove(task_id: int):
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("DELETE FROM tasks WHERE id = %s;", (task_id,))
+    conn.commit()
+
+    cursor.close()
+    conn.close()
+
+    return {"id": task_id, "action": "removed"}
     
