@@ -92,11 +92,6 @@ After running the application locally, documentation is available at:
 
 ---
 
-## Live Demo
-
-https://executiondataplatform-production-c903.up.railway.app/tasks
-
----
 
 ## Getting Started
 
