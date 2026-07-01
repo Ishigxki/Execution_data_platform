@@ -1,32 +1,77 @@
-# Execution_data_platform
-Productivity & Data intelligence platform
+# Execution Data Platform
+
+A backend task management and productivity platform built with FastAPI and PostgreSQL.
 
 ## Overview
-This project provides a backend API system that allows structured data to be ingested, processed, and accessed through clean and modular endpoints.
+
+Execution Data Platform is a backend-driven task management application designed to explore modern backend software engineering practices. The project demonstrates RESTful API development, relational database design, authentication, and cloud deployment using FastAPI and PostgreSQL.
+
+The application allows users to create and manage tasks while showcasing clean API architecture and persistent data storage.
 
 ## Problem
-Many applications need to process and manage structured data workflows, but lack a simple backend system to handle ingestion, processing, and retrieval efficiently.
+
+Many productivity applications require a reliable backend capable of storing, retrieving, and managing structured task data. This project explores how such a backend can be designed using modern Python technologies while remaining lightweight and scalable.
 
 ## Solution
-A lightweight FastAPI backend with a PostgreSQL database that stores task entries and exposes endpoints for creating and fetching tasks.
 
-## 🚀 Live Demo
+A FastAPI backend integrated with PostgreSQL that provides authenticated RESTful endpoints for managing task data. The project demonstrates database persistence, API documentation, modular architecture, and cloud deployment.
+
+## Live Demo
 (https://executiondataplatform-production-c903.up.railway.app/tasks)
 
-## 🧱 Tech Stack
-- FastAPI (Backend API)
-- PostgreSQL (Database)
-- HTML/CSS/JavaScript (Frontend)
-- Railway (Deployment)
+| Technology | Purpose |
+|------------|---------|
+| FastAPI | Backend API |
+| PostgreSQL | Database |
+| SQLAlchemy | ORM |
+| JWT | Authentication |
+| HTML/CSS/JavaScript | Frontend |
+| Railway | Deployment |
+| Swagger/OpenAPI | API Documentation |
 
-## 🔥 Features
-- Create tasks via REST API
-- Retrieve stored tasks from database
-- Persistent cloud storage
-- Simple interactive UI
+## Features
 
-## 🧠 Architecture
-Frontend → FastAPI → PostgreSQL
+- RESTful CRUD endpoints
+- JWT Authentication
+- PostgreSQL database integration
+- Interactive Swagger API documentation
+- Cloud deployment using Railway
+- Modular backend architecture
+
+## Architecture
+                 Browser
+                     │
+         HTML / CSS / JavaScript
+                     │
+              REST API Requests
+                     │
+                 FastAPI Server
+                     │
+          Authentication Layer
+                     │
+                PostgreSQL
+
+
+##Structure
+Execution_data_platform/
+
+│
+
+├── app/
+
+├── routers/
+
+├── models/
+
+├── database/
+
+├── static/
+
+├── templates/
+
+├── main.py
+
+└── requirements.txt
 
 ## 📌 Why I built this
 To demonstrate full-stack backend engineering skills, including API design, database integration, and cloud deployment.
