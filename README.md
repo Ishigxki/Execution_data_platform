@@ -52,7 +52,7 @@ A FastAPI backend integrated with PostgreSQL that provides authenticated RESTful
                 PostgreSQL
 
 
-##Structure
+## Structure
 Execution_data_platform/
 
 │
